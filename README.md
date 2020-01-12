@@ -7,5 +7,5 @@ Run python file using IDE<br>
 Or<br>
 Using through command prompt using following command:<br>
   cd into the project folder.<br>
-  type "python 'tic tac toe.py'.<br>
+  type "python 'tic tac toe.py'".<br>
   Press enter.
