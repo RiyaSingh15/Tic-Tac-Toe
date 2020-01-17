@@ -172,6 +172,11 @@ class tic:
             messagebox.showinfo("Tic Tac Toe","Player 2 Wins")
             self.window.destroy()
             tic()
+
+        elif self.flag4=='o' and self.flag5=='o' and self.flag6=='o':
+            messagebox.showinfo("Tic Tac Toe","Player 2 Wins")
+            self.window.destroy()
+            tic()
              
         elif self.flag7=='o' and self.flag8=='o' and self.flag9=='o':
             messagebox.showinfo("Tic Tac Toe","Player 2 Wins")
@@ -204,6 +209,11 @@ class tic:
             tic()
              
         elif self.flag3=='x' and self.flag6=='x' and self.flag9=='x':
+            messagebox.showinfo("Tic Tac Toe","Player 1 Wins")
+            self.window.destroy()
+            tic()
+
+        elif self.flag4=='x' and self.flag5=='x' and self.flag6=='x':
             messagebox.showinfo("Tic Tac Toe","Player 1 Wins")
             self.window.destroy()
             tic()
