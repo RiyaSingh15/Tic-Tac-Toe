@@ -281,14 +281,16 @@ class tic:
         self.one.config(text="X", state="disabled")
         self.flag1 = 'x'
         self.lis.remove(1)
-        self.cp()
         self.checker()
+        self.cp()
+        self.checker()        
 
     def ox2(self):
         self.count += 1
         self.two.config(text="X", state="disabled")
         self.flag2 = 'x'
         self.lis.remove(2)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -297,6 +299,7 @@ class tic:
         self.three.config(text="X", state="disabled")
         self.flag3 = 'x'
         self.lis.remove(3)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -305,6 +308,7 @@ class tic:
         self.four.config(text="X", state="disabled")
         self.flag4 = 'x'
         self.lis.remove(4)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -313,6 +317,7 @@ class tic:
         self.five.config(text="X", state="disabled")
         self.flag5 = 'x'
         self.lis.remove(5)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -321,6 +326,7 @@ class tic:
         self.six.config(text="X", state="disabled")
         self.flag6 = 'x'
         self.lis.remove(6)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -329,6 +335,7 @@ class tic:
         self.seven.config(text="X", state="disabled")
         self.flag7 = 'x'
         self.lis.remove(7)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -337,6 +344,7 @@ class tic:
         self.eight.config(text="X", state="disabled")
         self.flag8 = 'x'
         self.lis.remove(8)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -345,6 +353,7 @@ class tic:
         self.nine.config(text="X", state="disabled")
         self.flag9 = 'x'
         self.lis.remove(9)
+        self.checker()
         self.cp()
         self.checker()
 
@@ -434,11 +443,7 @@ class tic:
             self.window.destroy()
             tic()
 
-    def cp(self):    
-        if len(self.lis)==0:
-            messagebox.showinfo("Tic Tac Toe", "It's a draw")
-            self.window.destroy()
-            tic()   
+    def cp(self):     
         self.count+=1
         cho=random.choice(self.lis)
         if cho==1:
