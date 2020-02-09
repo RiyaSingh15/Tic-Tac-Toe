@@ -443,7 +443,11 @@ class tic:
             self.window.destroy()
             tic()
 
-    def cp(self):     
+    def cp(self):
+        if len(self.lis)==0:
+            messagebox.showinfo("Tic Tac Toe", "It's a draw")
+            self.window.destroy()
+            tic()
         self.count+=1
         cho=random.choice(self.lis)
         if cho==1:
